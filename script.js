@@ -1,5 +1,3 @@
-import {api} from './Api.js';
-
 let cityName = document.querySelector(".weather_city");
 let dateTime = document.querySelector(".weather_date_time");
 let w_forecast = document.querySelector(".weather_forecast");
@@ -53,7 +51,7 @@ citySearch.addEventListener('submit', (e)=>{
 
 const getWeatherData = async () => {
 
-    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api}`;
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=f908fec04116bd38f98caf47451ca9c7`;
 
     try {
 
